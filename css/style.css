@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@300&family=Updock&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: white;
+}
+
+.container-flued1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.buttons {
+    border: none;
+    outline: none;
+    font-size: 36px;
+    background: white;
+    color: white;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+}
+
+.container-box .buttons:nth-child(2),
+.container-box .buttons:nth-child(8) {
+    border: none;
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+}
+
+.container-box .buttons:nth-child(4),
+.container-box .buttons:nth-child(6) {
+    border: none;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.buttons:nth-child(5) {
+    border: 2px solid gray;
+}
+
+#restart {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #46a049;
+}
+
+.result {
+    border: 1px solid rgb(33, 150, 243);
+    background: rgba(33, 150, 243, 0.6);
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+    width: 300px;
+}
+
+#pay1,
+#pay2 {
+    font-weight:bold;
+    color: navy;
+}
+
+[value='0'] {
+    color: black;
+}
+
+[value='x'] {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+#turns{
+    background:#46a049;
+    color:white;
+    padding:5px;
+    margin:20px 0;
+}
